@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .example {
+        font-family: sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        var el = document.getElementById("mytext");
+        el.classList.add("nice");    // adds the nice class to the paragraph
+        el.classList.remove("nice"); // removes the nice class from the paragraph
+        el.classList.toggle("nice"); // adds the nice class to the paragraph again, since it does not currently
+                                     // contain the nice class.
+
+        if (el.classList.contains("example")) {
+            alert("The element contains sensitive content");
+        }
+    </script>
+    <style>
+        p {
+            color: blue;
+        }
+        </style>
+        <p>I am blue</p>
+        <p>I am also blue</p>
+        <p>I am blue as well</p>
+    <style>
+            p#last {
+                color: red;    
+            }
+            
+            p.example {
+                color: green;
+            }
+            
+            p.whatever {
+                color: yellow;
+            }    
+            </style>
+            <p class="whatever">I am yellow</p>
+    <p class="example">I am green now</p>
+            <p id="last" class="example">And now I am red</p>
+    <p> <a class='special'href="http://127.0.0.1:5500/Bootstrap.html">Bootstrap</a></p>
+    <style>
+        a.special:link {
+            color: blue;
+        }
+        
+        a.special:visited {
+            color: red;
+        }
+        </style>
+</body>
+</html>
